@@ -1,0 +1,42 @@
+////
+/// RGBA background mixin
+/// @group Tools
+/// @author Matt Bailey
+////
+
+/**
+ * _rgba-background.scss
+ */
+
+/**
+ * Cross-browser RGBa background
+ *
+ * Takes color (HEX or RGB) and opacity (0 to 1) values the arguments
+ *
+ * Usage example:
+ *
+ * .background-color--black-alpha50 {
+ *     @include rgba-background(rgb(0,0,0), 0.5);
+ * }
+ */
+
+/// Cross-browser RGBa background
+/// @author Matt Bailey
+/// @example
+///   .background-color--black-alpha50 {
+///     @include rgba-background(rgb(0,0,0), 0.5);
+///   }
+/// @group Tools
+
+@mixin rgba-background($color, $alpha) {
+    $rgba: rgba($color, $alpha);
+    $ie-hex-str: ie-hex-str($rgba);
+
+    background-color: transparent;
+    background-color: $rgba;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+    zoom: 1;
+
+    // set filter as none for IE9+
+    :root & { filter: none\0/IE9; }
+}

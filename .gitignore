@@ -1,0 +1,8 @@
+# System and editor files
+.DS_Store
+*.sublime-*
+
+# Directories
+dist/
+node_modules/
+sassdoc/
