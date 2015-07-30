@@ -7,22 +7,30 @@ module.exports = {
 
     // Dev tasks
     devFirst: [
-        'clean'
+        'clean:dist',
+        'scsslint'
     ],
     devSecond: [
         'sass:dev'
     ],
+    devThird: [
+        'autoprefixer'
+    ],
+    devFourth: [
+        'stylestats:dev'
+    ],
 
     // Production tasks
     prodFirst: [
-        'clean'
+        'clean:dist'
     ],
     prodSecond: [
         'sass:prod'
     ],
-
-    // Sassdoc tasks
-    sassDocFirst: [
-        'sassdoc'
+    prodThird: [
+        'autoprefixer'
+    ],
+    prodFourth: [
+        'cssmin'
     ]
 };

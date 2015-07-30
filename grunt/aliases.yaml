@@ -7,12 +7,12 @@ dev:
   tasks:
     - 'concurrent:devFirst'
     - 'concurrent:devSecond'
+    - 'concurrent:devThird'
+    - 'concurrent:devFourth'
 prod:
   description: 'Production build'
   tasks:
     - 'concurrent:prodFirst'
     - 'concurrent:prodSecond'
-docs:
-  description: 'Sassdoc build'
-  tasks:
-    - 'concurrent:sassDocFirst'
+    - 'concurrent:prodThird'
+    - 'concurrent:prodFourth'

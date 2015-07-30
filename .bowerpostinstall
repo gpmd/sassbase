@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Rename files for scss importing
+
+# sanitize-css
+pre_rename_sanitize="bower_components/sanitize-css/sanitize.scss"
+post_rename_sanitize="bower_components/sanitize-css/_sanitize.scss"
+if [ -f "$pre_rename_sanitize" ]
+then
+    echo "Moving: $pre_rename_sanitize => $post_rename_sanitize"
+    mv "$pre_rename_sanitize" "$post_rename_sanitize"
+else
+    echo ""
+fi

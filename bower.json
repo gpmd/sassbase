@@ -1,0 +1,9 @@
+{
+  "name": "gruntbase",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "dependencies": {
+    "sanitize-css": "~1.1.0",
+    "normalize-opentype.css": "~0.2.4"
+  }
+}
