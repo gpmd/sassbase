@@ -8,9 +8,9 @@ module.exports = {
         },
         files: [{
             expand: true,
-            cwd: 'src/styles',
+            cwd: '<%= project.src %>/styles',
             src: ['*.scss'],
-            dest: 'dist/styles',
+            dest: '<%= project.dist %>/styles',
             ext: '.css'
         }]
     },
@@ -18,14 +18,14 @@ module.exports = {
     // Production settings
     prod: {
         options: {
-            outputStyle: 'compressed',
+            outputStyle: 'nested',
             sourceMap: false
         },
         files: [{
             expand: true,
-            cwd: 'src/styles',
+            cwd: '<%= project.src %>/styles',
             src: ['*.scss'],
-            dest: 'dist/styles',
+            dest: '<%= project.dist %>/styles',
             ext: '.css'
         }]
     }
