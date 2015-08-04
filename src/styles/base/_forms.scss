@@ -1,0 +1,77 @@
+// scss-lint:disable PropertySpelling, QualifyingElement
+
+/**
+ * base/_forms.scss
+ */
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/* Standard styling
+   ========================================================================== */
+
+/* Fieldset */
+
+fieldset {
+    min-width: 0; // Stops webkit enforcing a minimum content width
+}
+
+// Uggglay (but required)!
+@-moz-document url-prefix() {
+    fieldset { display: table-cell; }
+}
+
+/* Legend */
+
+legend { line-height: 1; }
+
+/* Form */
+
+form { line-height: 1; }
+
+/* Labels */
+
+label {
+    display: inline-block !important;
+    *display: inline; // IE<8
+    zoom: 1; // IE<8
+    max-width: 100%;
+}
+
+/* Textareas */
+
+textarea { resize: vertical; }
+
+/* Inputs */
+
+// Main input types
+textarea,
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='url'],
+input[type='tel'],
+input[type='number'],
+input[type='search'],
+input[type='date'],
+input[type='time'],
+input[type='datalist'] {
+    width: 100%;
+
+    // &:hover {}
+
+    &:focus { outline: none; }
+}
+
+// Color
+// input[type='color'] {}
+
+// Radio & checkbox
+// input[type='radio'],
+// input[type='checkbox'] {}
+
+// Search
+// input[type='search'] {}
+
+select { font-family: $sans-serif; }

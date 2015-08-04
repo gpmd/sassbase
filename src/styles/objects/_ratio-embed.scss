@@ -1,0 +1,79 @@
+/**
+ * objects/_repsonsive-embed.scss
+ */
+
+/* ==========================================================================
+   Responsive Embed
+   ========================================================================== */
+
+/**
+ * Flexible media embeds
+ *
+ * Based on: http://alistapart.com/article/creating-intrinsic-ratios-for-video
+ *
+ * Example usage:
+ *
+ * <div class='ratio-embed'>
+ *     <div class='ratio-embed__ratio ratio-embed--3by2'></div>
+ *     <div class='ratio-embed__content'>
+ *         <!-- Content -->
+ *     </div>
+ * </div>
+ */
+
+/* Defaults
+   ========================================================================== */
+
+.ratio-embed {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+/**
+ * The aspect-ratio hack is applied to an empty element because it allows
+ * the component to respect max-height. Default aspect ratio is 1:1.
+ */
+
+[class^='ratio-embed__ratio'] {
+    display: block;
+    padding-bottom: 100%;
+    width: 100%;
+}
+
+/* Fit the content to the aspect ratio */
+
+.ratio-embed__content {
+    @extend %position--absolute-center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+/* Ratio modifiers
+   ========================================================================== */
+
+[class^='ratio-embed__ratio'] {
+    &[class*='--2by3'] { padding-bottom: 150%; }
+    &[class*='--1by1'] { padding-bottom: 100%; }
+    &[class*='--2by1'] { padding-bottom: 50%; }
+    &[class*='--3by1'] { padding-bottom: 33.333%; }
+    &[class*='--16by9'] { padding-bottom: 56.25%; }
+    &[class*='--3by2'] { padding-bottom: 66.667%; }
+    &[class*='--4by3'] { padding-bottom: 75%; }
+}
+
+/* Make iframe, object & embed fit container
+   ========================================================================== */
+
+.ratio-embed__content {
+    iframe,
+    object,
+    embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

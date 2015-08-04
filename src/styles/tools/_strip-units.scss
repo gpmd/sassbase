@@ -1,9 +1,11 @@
 /**
- * trumps/_main.scss
+ * tools/_strip-units.scss
  */
 
 /* ==========================================================================
-   Imports
+   Strip units
    ========================================================================== */
 
-// @import '';
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+}

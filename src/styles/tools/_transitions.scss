@@ -1,0 +1,30 @@
+/**
+ * _transitions.scss
+ */
+
+/* ==========================================================================
+   Transitions mixin
+   ========================================================================== */
+
+// Usage - Create a list and pass in into the mixin:
+//
+//      $unique-list-name: top, left, right;
+//      @include transition($unique-list-name);
+//
+// Outputs:
+//
+//  transition: top 150ms ease-out,left 150ms ease-out,right 150ms ease-out;
+
+@mixin transition($properties) {
+    @if length($properties) > 1 {
+        $transition: '';
+        @each $property in $properties {
+            $transition: $transition + $property + ' ' + $base-transition-duration + ' ' + $base-transition-easing + ',';
+        }
+        $transition: str-slice($transition, 1, -2);
+
+        transition: unquote($transition);
+    } @else {
+        transition: unquote($properties) $base-transition-duration $base-transition-easing;
+    }
+}

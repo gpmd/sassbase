@@ -1,0 +1,54 @@
+/**
+ * settings/_widths.scss
+ */
+
+/* ==========================================================================
+   Widths
+   ========================================================================== */
+
+/* Percentages expressed as fractions
+   ========================================================================== */
+
+$one-twelfth: 8.333333333333332% !default;
+$one-sixth: 16.666666666666664% !default;
+$one-quarter: 25% !default;
+$one-third: 33.33333333333333% !default;
+$five-twelfths: 41.66666666666667% !default;
+$one-half: 50% !default;
+$seven-twelfths: 58.333333333333336% !default;
+$two-thirds: 66.66666666666666% !default;
+$three-quarters: 75% !default;
+$five-sixths: 83.33333333333334% !default;
+$eleven-twelfths: 91.66666666666666% !default;
+$one-whole: 100% !default;
+
+/* ==========================================================================
+   Scaffolding
+   ========================================================================== */
+
+/* Layout
+   ========================================================================== */
+
+/**
+ * Based on a $base-font-size of 0.813em/13px
+ */
+
+$gutter: 0.769em !default; // 10px
+
+/* Containers
+   ========================================================================== */
+
+/**
+ * Based on a $base-font-size of 0.813em/13px
+ */
+
+$container-text-area: 63.827em !default; // 830px
+
+$container-narrow: 36.154em !default; // 470px
+$container-medium: 54.923em !default; // 714px
+$container-standard: 73.846em !default; // 960px
+$container-wide: 92.308em !default; // 1200px
+$container-widest: 105.077em !default; // 1366px
+$container-max: $one-whole !default; // 100%
+
+$container-padding: $gutter !default;

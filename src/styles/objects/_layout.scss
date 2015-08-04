@@ -1,17 +1,21 @@
 /**
- * objects/_critical.scss
+ * objects/_layout.scss
  */
 
 /* ==========================================================================
-   Imports
+   Layout
    ========================================================================== */
 
-/* Extends
+/* Contain floats
    ========================================================================== */
 
-@import 'extends/all';
+.cf { @include cf($extend: false); }
 
-/* Main
+/* Floats
    ========================================================================== */
 
-// @import '';
+.float--none { float: none !important; }
+
+.float--left { float: left !important; }
+
+.float--right { float: right !important; }

@@ -1,0 +1,125 @@
+/**
+ * base/_typography.scss
+ */
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/* Body
+   ========================================================================== */
+
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    // -webkit-font-smoothing: antialiased; // Don't do this: http://usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/
+    color: $base-font-color;
+}
+
+/* Headings
+   ========================================================================== */
+
+/**
+ * Defaults
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $display-heading;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    line-height: 1.167; // Tighten line-height up for headings
+    color: $base-heading-color;
+}
+
+h4,
+h5,
+h6 {
+    font-family: $sub-heading;
+}
+
+/**
+ * Sizes
+ *
+ * Based on:
+ *   :root font-size = 1em/16px
+ *   body font-size = 0.813em/13px
+ */
+
+h1 { font-size: 3.846em; } // 50px
+h2 { font-size: 2.154em; } // 28px
+h3 { font-size: 1.385em; } // 18px
+h4 { font-size: 1.154em; } // 15px
+h5 { font-size: 1.077em; } // 14px
+h6 { font-size: 1em; } // 13px
+
+/**
+ * Margins
+ */
+
+// Three quarters the height of the font-size
+h1 { margin: 0 0 0.75em; }
+h2 { margin: 0 0 0.75em; }
+
+// The height of the font size
+h3 { margin: 0 0 1em; }
+
+// 1.5 times the height of the font-size
+h4,
+h5,
+h6 {
+    margin: 0 0 1.5em;
+}
+
+/* General
+   ========================================================================== */
+
+/* Paragraphs */
+
+p { margin: 0 0 2em; } // Twice the height of the font size
+
+strong,
+b { font-weight: bold; }
+
+em { font-style: italic; }
+
+/* Blockquotes */
+
+blockquote {
+    font-family: $display-heading;
+    font-weight: normal;
+    font-size: 1.538em; // 20px
+    line-height: 1.286; // 36px
+    text-transform: uppercase;
+    padding: 0;
+    margin: 1em 0;
+
+    // Inherit blockquote styles
+    p,
+    cite {
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+    // Media queries
+    @include bp-more-than($large-screen-min) {
+        font-size: 2.154em; // 28px
+    }
+}
+
+/* Horizontial rules */
+
+hr {
+    border-bottom: 1px dashed $grey-medium;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin: 3em 0;
+}

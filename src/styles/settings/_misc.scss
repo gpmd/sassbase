@@ -1,17 +1,13 @@
 /**
- * objects/_critical.scss
+ * settings/_misc.scss
  */
 
 /* ==========================================================================
-   Imports
+   Misc settings
    ========================================================================== */
 
-/* Extends
+/* Transitions
    ========================================================================== */
 
-@import 'extends/all';
-
-/* Main
-   ========================================================================== */
-
-// @import '';
+$base-transition-duration: 250ms !default;
+$base-transition-easing: ease-out !default;

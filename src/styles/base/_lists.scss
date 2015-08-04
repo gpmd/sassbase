@@ -1,0 +1,29 @@
+/**
+ * base/_lists.scss
+ */
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/* Ordered and unordered */
+
+ul,
+ol {
+    padding: 0 0 0 2em;
+    margin: 0 0 2em;
+}
+
+ul { list-style-type: disc; }
+
+ol { list-style-type: decimal; }
+
+/* Definition */
+
+dl {
+    margin: 0 0 2em;
+
+    dt { font-weight: bold; }
+
+    dd { margin: 0; }
+}

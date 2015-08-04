@@ -1,0 +1,35 @@
+/**
+ * objects/_opacity.scss
+ */
+
+/* ==========================================================================
+   Opacity
+   ========================================================================== */
+
+/* Opacity vars
+   ========================================================================== */
+
+$opacities: ('0pc' 0),
+            ('25pc' 0.25),
+            ('50pc' 0.5),
+            ('75pc' 0.75),
+            ('100pc' 1);
+
+/* Generate opacity
+   ========================================================================== */
+
+/**
+ * Auto generate opacity selectors
+ */
+
+@each $opacity in $opacities {
+    $opacity-name: nth($opacity, 1);
+    $opacity-value: nth($opacity, 2);
+
+    .opacity--#{$opacity-name} {
+        $ie-value: $opacity-value * 100;
+        opacity: $opacity-value !important;
+        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity='+$ie-value+')';
+        filter: alpha(opacity=$ie-value);
+    }
+}

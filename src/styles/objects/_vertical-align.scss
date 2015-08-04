@@ -1,0 +1,59 @@
+/**
+ * objects/_vertical-align.scss
+ */
+
+/* ==========================================================================
+   Vertical align
+   ========================================================================== */
+
+/**
+ * Reference: http://css-tricks.com/centering-in-the-unknown/
+ *
+ * Usage:
+ *
+ * <div class='valign'>
+ *     <div class='valign__content--middle'>
+ *         <!-- Content -->
+ *     </div>
+ * </div>
+ */
+
+/* Pseudo element to center on */
+
+.valign:before {
+    @extend %inline-block;
+    content: '';
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+}
+
+/* Top
+   ========================================================================== */
+
+/* Content element */
+
+.valign__content--top {
+    @extend %inline-block;
+    vertical-align: top;
+}
+
+/* Middle
+   ========================================================================== */
+
+/* Content element */
+
+.valign__content--middle {
+    @extend %inline-block;
+    vertical-align: middle;
+}
+
+/* Bottom
+   ========================================================================== */
+
+/* Content element */
+
+.valign__content--bottom {
+    @extend %inline-block;
+    vertical-align: bottom;
+}

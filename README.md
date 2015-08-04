@@ -23,18 +23,20 @@ npm install
 
 **Dev mode:**
 
-Includes [scsslint](https://github.com/ahmednuaman/grunt-scss-lint) and [stylestats](https://github.com/tvooo/grunt-stylestats).
-
 ```bash
 grunt dev
 ```
 
 **Production mode:**
 
-Includes [cssmin](https://github.com/gruntjs/grunt-contrib-cssmin).
-
 ```bash
 grunt prod
+```
+
+**Styles (SCSS/CSS) reporting:**
+
+```bash
+grunt report
 ```
 
 ## How to use in your own projects

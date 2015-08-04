@@ -1,0 +1,28 @@
+/**
+ * tools/_media-queries.scss
+ */
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/* Less than (max-width)
+   ========================================================================== */
+
+@mixin bp-less-than($bp) {
+    @media all and (max-width: $bp) { @content; }
+}
+
+/* More than (min-width)
+   ========================================================================== */
+
+@mixin bp-more-than($bp) {
+    @media all and (min-width: $bp) { @content; }
+}
+
+/* Between (min-width and max-width)
+   ========================================================================== */
+
+@mixin bp-between($bp-from, $bp-to) {
+    @media all and (min-width: $bp-from) and (max-width: $bp-to) { @content; }
+}

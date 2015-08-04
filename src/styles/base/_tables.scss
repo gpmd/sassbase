@@ -1,0 +1,22 @@
+/**
+ * base/_tables.scss
+ */
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    margin: 0 0 1em;
+}
+
+th { text-align: left; }
+
+th,
+td { padding: 0.5em; }
+
+tr,
+td,
+th { vertical-align: middle; }

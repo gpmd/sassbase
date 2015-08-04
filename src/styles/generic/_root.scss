@@ -1,17 +1,23 @@
 /**
- * objects/_critical.scss
+ * generic/_root.scss
  */
 
 /* ==========================================================================
-   Imports
+   Root elements
    ========================================================================== */
 
-/* Extends
+/* Viewport
    ========================================================================== */
 
-@import 'extends/all';
+@-ms-viewport { width: device-width; }
+@viewport { width: device-width; }
 
-/* Main
+/* html
    ========================================================================== */
 
-// @import '';
+/**
+ * Reference:
+ * http://filamentgroup.com/lab/how-we-learned-to-leave-body-font-size-alone.html
+ */
+
+:root { font-size: 1em; }

@@ -1,9 +1,13 @@
 /**
- * trumps/_main.scss
+ * objects/extends/_all.scss
  */
 
 /* ==========================================================================
    Imports
    ========================================================================== */
 
-// @import '';
+@import 'display';
+@import 'layout';
+@import 'position';
+@import 'text';
+@import 'visibility';

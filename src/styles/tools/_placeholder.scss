@@ -1,0 +1,28 @@
+// scss-lint:disable VendorPrefixes
+
+/**
+ * tools/_placeholder.scss
+ */
+
+/* ==========================================================================
+   Placeholder styling
+   ========================================================================== */
+
+/* Color
+   ========================================================================== */
+
+@mixin placeholder-color($color) {
+    &::-webkit-input-placeholder { color: $color; }
+
+    &:-moz-placeholder {
+        color: $color;
+        opacity: 1;
+    }
+
+    &::-moz-placeholder {
+        color: $color;
+        opacity: 1;
+    }
+
+    &:-ms-input-placeholder { color: $color; }
+}

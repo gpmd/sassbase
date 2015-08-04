@@ -1,9 +1,10 @@
 /**
- * trumps/_main.scss
+ * settings/_grid.scss
  */
 
 /* ==========================================================================
-   Imports
+   Grid
    ========================================================================== */
 
-// @import '';
+$grid-direction: left !default; // switch to 'right' for rtl
+$grid-gutter: 0 !default; // can be px, em, or %

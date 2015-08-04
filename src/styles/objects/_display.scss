@@ -1,0 +1,22 @@
+/**
+ * objects/_display.scss
+ */
+
+/* ==========================================================================
+   Display
+   ========================================================================== */
+
+/* Display utilities
+   ========================================================================== */
+
+// Hidden
+.hidden { @include hidden($extend: false); }
+
+// Hidden visually
+.hidden--visually { @include hidden--visually($extend: false); }
+
+// Inline block
+.inline-block { @include inline-block($extend: false); }
+
+// Block
+.block { @include block($extend: false); }
