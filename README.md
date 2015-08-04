@@ -4,7 +4,7 @@
 
 > A simple Sass base for web projects
 
-Includes an example Grunt workflow. Assumes you already have Node/NPM, Grunt and Bower installed.
+Follows a [BEM 'style'](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/), [ITCSS](https://speakerdeck.com/dafed/managing-css-projects-with-itcss) methodology. Assumes you already have Node/NPM, Grunt and Bower installed.
 
 ## Clone the repo
 
