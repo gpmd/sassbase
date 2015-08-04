@@ -33,7 +33,7 @@ grunt dev
 grunt prod
 ```
 
-**Styles (SCSS/CSS) reporting:**
+**Styles reporting (SCSS lint / CSS stats):**
 
 ```bash
 grunt report
