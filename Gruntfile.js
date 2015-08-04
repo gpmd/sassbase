@@ -1,23 +1,23 @@
 module.exports = function(grunt) {
 
-    require('time-grunt')(grunt);
+  require('time-grunt')(grunt);
 
-    require('load-grunt-config')(grunt, {
+  require('load-grunt-config')(grunt, {
 
-        jitGrunt: {
-            staticMappings: {
-                scsslint: 'grunt-scss-lint'
-            }
-        },
+    jitGrunt: {
+      staticMappings: {
+        scsslint: 'grunt-scss-lint'
+      }
+    },
 
-        init: true,
+    init: true,
 
-        data: {
+    data: {
 
-            project: {
-                src: 'src',
-                dist: 'dist'
-            }
-        }
-    });
+      project: {
+        src: 'src',
+        dist: 'dist'
+      }
+    }
+  });
 };

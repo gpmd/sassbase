@@ -1,13 +1,13 @@
 module.exports = {
 
-    options: {
-        cascade: false
-    },
+  options: {
+    cascade: false
+  },
 
-    main: {
-        expand: true,
-        flatten: true,
-        src: '<%= project.dist %>/styles/*.css',
-        dest: '<%= project.dist %>/styles/'
-    }
+  main: {
+    expand: true,
+    flatten: true,
+    src: '<%= project.dist %>/styles/*.css',
+    dest: '<%= project.dist %>/styles/'
+  }
 };
