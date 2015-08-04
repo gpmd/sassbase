@@ -1,3 +1,5 @@
+// scss-lint:disable VendorPrefixes, ColorVariable
+
 /**
  * settings/_colors.scss
  */
@@ -13,42 +15,18 @@ $black: rgb(0, 0, 0) !default;
 $white: rgb(255, 255, 255) !default;
 $transparent: transparent !default;
 
-/* Brand colors
-   ========================================================================== */
-
-$bima-blue: rgb(8, 98, 200) !default;
-$bima-pink: rgb(212, 49, 96) !default;
-$bima-green: rgb(27, 183, 146) !default;
-$bima-yellow: rgb(250, 178, 6) !default;
-$bima-light-grey: rgb(233, 233, 233) !default;
-
 /* Greys
    ========================================================================== */
 
 $grey-darkest: rgb(35, 35, 35) !default;
 $grey-dark: rgb(84, 83, 83) !default;
 $grey-medium: rgb(204, 204, 204) !default;
-$grey-light: $bima-light-grey !default;
-
-/* Overlay tints */
-
-$bima-blue--tint: rgba($bima-blue, 0.7) !default;
-$bima-pink--tint: rgba($bima-pink, 0.7) !default;
-$bima-green--tint: rgba($bima-green, 0.7) !default;
-$bima-yellow--tint: rgba($bima-yellow, 0.7) !default;
-$bima-white--tint: rgba($white, 0.7) !default;
+$grey-light: rgb(238, 238, 238) !default;
 
 /* Typography
    ========================================================================== */
 
-$base-font-color: $grey-dark !default;
-$base-link-color: $bima-blue !default;
-$base-heading-color: $bima-blue !default;
-$base-subheading-color: $grey-darkest !default;
-
-/* Buttons
-   ========================================================================== */
-
-$base-button-bg-color: $bima-blue !default;
-$base-button-bg-hover-color: darken($base-button-bg-color, 10%) !default;
-$base-button-inversed-bg-hover-color: lighten($base-button-bg-color, 25%) !default;
+$base-font-color: $grey-darkest !default;
+$base-link-color: $grey-medium !default;
+$base-heading-color: $base-font-color !default;
+$base-subheading-color: $grey-medium !default;

@@ -9,18 +9,12 @@
 /* Color vars
    ========================================================================== */
 
-// scss-lint:disable ColorVariable
 $colors: ('black' $black),
          ('white' $white),
-         ('blue' $bima-blue),
-         ('pink' $bima-pink),
-         ('green' $bima-green),
-         ('yellow' $bima-yellow),
-         ('light-grey' $bima-light-grey),
+         ('light-grey' $grey-light),
          ('medium-grey' $grey-medium),
          ('dark-grey' $grey-dark),
          ('darkest-grey' $grey-darkest);
-// scss-lint:enable ColorVariable
 
 /* Generate colors
    ========================================================================== */
@@ -38,5 +32,5 @@ $colors: ('black' $black),
     // Color selectors
     .color--#{$color-name} { color: $text-color !important; }
     .background-color--#{$color-name} { background-color: $background-color !important; }
-    // .border-color--#{$color-name} { border-color: $border-color !important; }
+    .border-color--#{$color-name} { border-color: $border-color !important; }
 }

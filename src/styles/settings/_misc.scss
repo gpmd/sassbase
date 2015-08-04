@@ -9,15 +9,5 @@
 /* Transitions
    ========================================================================== */
 
-$base-transition-duration: 175ms !default;
+$base-transition-duration: 250ms !default;
 $base-transition-easing: ease-out !default;
-
-
-/* Icon backgound sizes. @Todo break out into icon file
-   ========================================================================== */
-
-$icon-arrow-background-size-full: 296px 696px;
-$icon-arrow-background-size-half: 148px 348px;
-
-$icon-play-background-size-full: 96px 696px;
-$icon-play-background-size-half: 48px 348px;

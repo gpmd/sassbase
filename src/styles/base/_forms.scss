@@ -1,4 +1,4 @@
-// scss-lint:disable QualifyingElement
+// scss-lint:disable PropertySpelling, QualifyingElement
 
 /**
  * base/_forms.scss
@@ -59,19 +59,19 @@ input[type='time'],
 input[type='datalist'] {
     width: 100%;
 
-    &:hover {}
+    // &:hover {}
 
     &:focus { outline: none; }
 }
 
 // Color
-input[type='color'] {}
+// input[type='color'] {}
 
 // Radio & checkbox
-input[type='radio'],
-input[type='checkbox'] {}
+// input[type='radio'],
+// input[type='checkbox'] {}
 
 // Search
-input[type='search'] {}
+// input[type='search'] {}
 
 select { font-family: $sans-serif; }
