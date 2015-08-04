@@ -29,15 +29,11 @@ grunt dev
 
 **Production mode:**
 
-Includes [cssmin](https://github.com/gruntjs/grunt-contrib-cssmin).
-
 ```bash
 grunt prod
 ```
 
-**Styles reporting:**
-
-Includes [scsslint](https://github.com/ahmednuaman/grunt-scss-lint), [stylestats](https://github.com/tvooo/grunt-stylestats) and [csscss](https://github.com/peterkeating/grunt-csscss).
+**Styles (SCSS/CSS) reporting:**
 
 ```bash
 grunt report
