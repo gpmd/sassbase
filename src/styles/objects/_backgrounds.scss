@@ -1,0 +1,103 @@
+/**
+ * objects/backgrounds.scss
+ */
+
+/* ==========================================================================
+   Backgrounds
+   ========================================================================== */
+
+/* Patterns
+   ========================================================================== */
+
+// .background-pattern--1 { background-image: url('../images/pattern-1.png'); }
+// .background-pattern--2 { background-image: url('../images/pattern-2.png'); }
+// .background-pattern--3 { background-image: url('../images/pattern-3.png'); }
+// .background-pattern--4 { background-image: url('../images/pattern-4.png'); }
+
+/* Vars */
+
+$patterns: ('1' $pattern-1),
+           ('2' $pattern-2),
+           ('3' $pattern-3),
+           ('4' $pattern-4);
+
+/**
+ * Auto generate selectors
+ */
+
+@each $pattern in $patterns {
+    $pattern-key: nth($pattern, 1);
+    $pattern-value: nth($pattern, 2);
+
+    .background-pattern--#{$pattern-key} { background-image: url($pattern-value) !important; }
+}
+
+/* Positions
+   ========================================================================== */
+
+// .background-position--t { background-position: top; }
+// .background-position--tr { background-position: top right; }
+// .background-position--r { background-position: right; }
+// .background-position--br { background-position: bottom right; }
+// .background-position--b { background-position: bottom; }
+// .background-position--bl { background-position: bottom left; }
+// .background-position--l { background-position: left; }
+// .background-position--tl { background-position: top left; }
+// .background-position--c { background-position: center; }
+
+/* Vars */
+
+$positions: ('t' 'top'),
+            ('tr' 'top right'),
+            ('r' 'right'),
+            ('br' 'bottom right'),
+            ('b' 'bottom'),
+            ('bl' 'bottom left'),
+            ('l' 'left'),
+            ('tl' 'top left'),
+            ('c' 'center');
+
+/**
+ * Auto generate selectors
+ */
+
+@each $position in $positions {
+    $position-key: nth($position, 1);
+    $position-value: nth($position, 2);
+
+    .background-position--#{$position-key} { background-position: #{$position-value} !important; }
+}
+
+/* Zoom
+   ========================================================================== */
+
+// .background-zoom--25 { background-size: 25%; }
+// .background-zoom--50 { background-size: 50%; }
+// .background-zoom--75 { background-size: 75%; }
+// .background-zoom--100 { background-size: 100%; }
+// .background-zoom--125 { background-size: 125%; }
+// .background-zoom--150 { background-size: 150%; }
+// .background-zoom--175 { background-size: 175%; }
+// .background-zoom--200 { background-size: 200%; }
+
+/* Vars */
+
+$zooms: ('25' '25'),
+        ('50' '50'),
+        ('75' '75'),
+        ('100' '100'),
+        ('125' '125'),
+        ('150' '150'),
+        ('175' '175'),
+        ('200' '200');
+
+/**
+ * Auto generate selectors
+ */
+
+@each $zoom in $zooms {
+    $zoom-key: nth($zoom, 1);
+    $zoom-value: nth($zoom, 2);
+
+    .background-zoom--#{$zoom-key} { background-size: #{$zoom-value}% !important; }
+}

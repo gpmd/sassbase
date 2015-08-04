@@ -1,15 +1,11 @@
 /**
- * settings/_main.scss
+ * tools/_strip-units.scss
  */
 
 /* ==========================================================================
-   Imports
+   Strip units
    ========================================================================== */
 
-@import 'breakpoints';
-@import 'colors';
-@import 'grid';
-@import 'misc';
-@import 'patterns';
-@import 'typography';
-@import 'widths';
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+}

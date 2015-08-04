@@ -1,0 +1,43 @@
+/**
+ * components/_image-cover.scss
+ */
+
+/* ==========================================================================
+   Image cover
+   ========================================================================== */
+
+/* General
+   ========================================================================== */
+
+/**
+ * Cover the background area with an image
+ *
+ * @Note The actual image urls need to be defined inline
+ */
+
+[class*='image-cover'] {
+    position: relative;
+
+    &:after {
+        @extend %position--absolute-center;
+        z-index: 0;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%;
+        content: '';
+    }
+}
+
+/* Image cover modifiers
+   ========================================================================== */
+
+/* Opacity */
+
+[class*='image-cover'] {
+    &[class*='--opacity-0pc']:after { @include opacity(0); }
+    &[class*='--opacity-25pc']:after { @include opacity(0.25); }
+    &[class*='--opacity-50pc']:after { @include opacity(0.5); }
+    &[class*='--opacity-75pc']:after { @include opacity(0.75); }
+    &[class*='--opacity-100pc']:after { @include opacity(1); }
+}

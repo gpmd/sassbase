@@ -1,0 +1,41 @@
+/**
+ * base/_buttons.scss
+ */
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+button,
+[type="button"],
+[type="submit"],
+[type="reset"] {
+    display: inline-block;
+    *display: inline; // IE 6/7
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+// Firefox: Get rid of the inner focus border
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+// Remove the focus outline
+button:focus,
+[type="button"]:focus,
+[type="submit"]:focus,
+[type="reset"]:focus { outline: 0; }

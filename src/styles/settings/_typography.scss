@@ -1,0 +1,38 @@
+/**
+ * settings/_typography.scss
+ */
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/* Font families
+   ========================================================================== */
+
+$arial: Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
+$georgia: Georgia, Times, 'Times New Roman', serif !default;
+$tradegothic-bold-condensed: 'TradeGothicLT-BoldCondTwenty' !default;
+$gillsans: 'GillSansMTStd', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+
+/* Base styles
+   ========================================================================== */
+
+$sans-serif: $gillsans !default;
+$serif: $georgia !default;
+
+$display-heading: $tradegothic-bold-condensed !default;
+$sub-heading: $gillsans !default;
+$body-heading: $gillsans !default;
+$intro: $serif !default;
+
+$base-font-family: $sans-serif !default;
+
+/* Sizes
+   ========================================================================== */
+
+/**
+ * Based on a $base-font-size of 0.813em/13px
+ */
+
+$base-font-size: 0.813em !default; // 13px
+$base-line-height: 1.692 !default;  // 22px

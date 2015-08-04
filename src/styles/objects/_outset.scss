@@ -1,0 +1,46 @@
+/**
+ * objects/_outset.scss
+ */
+
+/* ==========================================================================
+   Outset
+   ========================================================================== */
+
+/* Defaults */
+
+.outset--right,
+.outset--left,
+.outset--center {
+    position: relative;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* Margin transition */
+
+.outset--right,
+.outset--left,
+.outset--center { transition: margin $base-transition-duration $base-transition-easing; }
+
+/* Add outsets to medium screens and up */
+
+@include bp-more-than($medium-screen-min) {
+
+    // Right
+    .outset--right {
+        margin-right: -200px;
+        margin-left: 0;
+    }
+
+    // Center
+    .outset--center {
+        margin-right: -200px;
+        margin-left: -200px;
+    }
+
+    // Left
+    .outset--left {
+        margin-right: 0;
+        margin-left: -200px;
+    }
+}

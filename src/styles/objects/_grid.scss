@@ -1,0 +1,257 @@
+// scss-lint:disable VendorPrefix PropertySpelling
+
+/**
+ * objects/_grid.scss
+ */
+
+/* ==========================================================================
+   Grid
+   ========================================================================== */
+
+/*
+ * Example usage:
+ *
+ * <div class='grid grid--has-gutter'>
+ *     <div class='grid__cell unit-1-1 unit-1-2--medium unit-1-4--large'></div>
+ *     <div class='grid__cell unit-1-1 unit-1-2--medium unit-1-4--large'></div>
+ *     <div class='grid__cell unit-1-1 unit-1-2--medium unit-1-4--large'></div>
+ *     <div class='grid__cell unit-1-1 unit-1-2--medium unit-1-4--large'></div>
+ * </div>
+ */
+
+/* Grid core
+   ========================================================================== */
+
+/**
+ * Grid container
+ * Must only contain `.grid` or `.grid__cell` components as children.
+ */
+
+// Flexbox
+.flexbox {
+    .grid {
+        display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox; // TWEENER - IE 10
+        display: -moz-flex;
+        display: -webkit-flex; // NEW - Chrome
+        display: flex; // NEW, Spec - Opera 12.1, Firefox 20+
+
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}
+
+// No flexbox fallback
+.no-flexbox {
+    .grid {
+        display: block;
+        padding: 0;
+        // margin: 0 -0.5 * $grid-gutter;
+        text-align: $grid-direction;
+
+        // Remove whitespace between `inline-block` elements
+        letter-spacing: -0.31em; // Webkit: collapse white-space between units
+        *letter-spacing: normal; // reset IE<8
+        *word-spacing: -0.43em;
+
+        // Fix text-rendering: optimizeLegibility in Webkit
+        text-rendering: optimizespeed;
+    }
+}
+
+/**
+ * Opera hack
+ */
+
+.no-flexbox {
+    .opera:-o-prefocus,
+    .grid { word-spacing: -0.43em; }
+}
+
+/**
+ * Child `grid` object adjustments
+ * Used for more complex fixed-fluid hybrid grids.
+ */
+
+.no-flexbox {
+    .grid > .grid {
+        overflow: hidden;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+/**
+ * Grid units
+ * No explicit width by default. Apply `.unit-x-y` classes.
+ */
+
+// Flexbox
+.flexbox {
+    .grid__cell {
+        display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox; // TWEENER - IE 10
+        display: -moz-flex;
+        display: -webkit-flex; // NEW - Chrome
+        display: flex; // NEW, Spec - Opera 12.1, Firefox 20+
+        padding: 0;
+        margin: 0;
+    }
+}
+
+// Fix for ratio-embed content
+.flexbox {
+    .flex-fix { width: 100%; }
+}
+
+// No flexbox fallback
+.no-flexbox {
+    .grid__cell {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        vertical-align: top;
+        text-align: $grid-direction;
+
+        // Reset text defaults
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-rendering: auto;
+    }
+}
+
+/* Cell modifiers
+   ========================================================================== */
+
+/* Vertical alignment */
+
+// Flexbox
+.flexbox {
+    .grid__cell--middle { align-items: center; }
+    .grid__cell--top { align-items: flex-start; }
+    .grid__cell--bottom { align-items: flex-end; }
+}
+
+// No flexbox
+.no-flexbox {
+    .grid__cell--middle { vertical-align: middle; }
+    .grid__cell--top { vertical-align: top; }
+    .grid__cell--bottom { vertical-align: bottom; }
+}
+
+/* Grid modifiers
+   ========================================================================== */
+
+/**
+ * Add gutters
+ *
+ * @note (Should) work for both flexbox and no-flexbox grids
+ */
+
+.grid--has-gutter {
+    margin-left: -$gutter*2;
+
+    .grid__cell {
+        padding-left: $gutter*2;
+        padding-bottom: $gutter*2;
+    }
+}
+
+/* Horizontal alignment of grid cells */
+
+// Flexbox
+.flexbox {
+    .grid--center {
+        justify-content: center;
+        -webkit-box-pack: center; // Required for iOS
+    }
+
+    .grid--left {
+        justify-content: flex-start;
+        -webkit-box-pack: start; // Required for iOS
+    }
+
+    .grid--right {
+        justify-content: flex-end;
+        -webkit-box-pack: end; // Required for iOS
+    }
+}
+
+// No flexbox
+.no-flexbox {
+    .grid--center { text-align: center; }
+    .grid--left { text-align: left; }
+    .grid--right { text-align: right; }
+}
+
+/* Grid cell modifiers
+   ========================================================================== */
+
+/**
+ * Modifier: horizontally center one unit
+ * Set a specific unit to be horizontally centered. Doesn't affect
+ * any other units. Can still contain a child `grid` object.
+ */
+
+.no-flexbox {
+    .grid__cell--center {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/**
+ * Modifier: align horizontally one unit to the left
+ * Set a specific unit to be horizontally on the left. Doesn't affect
+ * any other units. Can still contain a child `grid` object.
+ */
+
+.no-flexbox {
+    .grid__cell--left {
+        display: block;
+        margin-right: auto;
+    }
+}
+
+/**
+ * Modifier: align horizontally one unit to the right
+ * Set a specific unit to be horizontally on the right. Doesn't affect
+ * any other units. Can still contain a child `grid` object.
+ */
+
+.no-flexbox {
+    .grid__cell--right {
+        display: block;
+        margin-left: auto;
+    }
+}
+
+/* Grid units (responsive)
+   ========================================================================== */
+
+@include grid-build(1 2 3 4 5 6 7 8);
+
+@include bp-more-than($small-screen-min) {
+    @include grid-build(1 2 3 4 5 6 7 8, '--small');
+}
+
+@include bp-more-than($medium-screen-min) {
+    @include grid-build(1 2 3 4 5 6 7 8, '--medium');
+}
+
+@include bp-more-than($large-screen-min) {
+    @include grid-build(1 2 3 4 5 6 7 8, '--large');
+}
+
+@include bp-more-than($super-large-screen-min) {
+    @include grid-build(1 2 3 4 5 6 7 8, '--super-large');
+}
+
+@include bp-more-than($super-large-screen-max) {
+    @include grid-build(1 2 3 4 5 6 7 8, '--super-large-max');
+}

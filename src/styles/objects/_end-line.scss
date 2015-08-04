@@ -1,0 +1,24 @@
+/**
+ * objects/_end-line.scss
+ */
+
+/* ==========================================================================
+   End Line
+   ========================================================================== */
+
+
+.end-line {
+    display: block;
+    margin: 0;
+    border: 0;
+    line-height: 0;
+    text-align: center;
+    color: inherit;
+
+    &:before {
+        content: '';
+        display: inline-block;
+        border-bottom: 1px solid currentColor;
+        width: $base-font-size*2;
+    }
+}

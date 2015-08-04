@@ -1,0 +1,42 @@
+/**
+ * objects/_color.scss
+ */
+
+/* ==========================================================================
+   Color
+   ========================================================================== */
+
+/* Color vars
+   ========================================================================== */
+
+// scss-lint:disable ColorVariable
+$colors: ('black' $black),
+         ('white' $white),
+         ('blue' $bima-blue),
+         ('pink' $bima-pink),
+         ('green' $bima-green),
+         ('yellow' $bima-yellow),
+         ('light-grey' $bima-light-grey),
+         ('medium-grey' $grey-medium),
+         ('dark-grey' $grey-dark),
+         ('darkest-grey' $grey-darkest);
+// scss-lint:enable ColorVariable
+
+/* Generate colors
+   ========================================================================== */
+
+/**
+ * Auto generate color, background-color and border-color selectors
+ */
+
+@each $color in $colors {
+    $color-name: nth($color, 1);
+    $text-color: nth($color, 2);
+    $background-color: nth($color, 2);
+    $border-color: nth($color, 2);
+
+    // Color selectors
+    .color--#{$color-name} { color: $text-color !important; }
+    .background-color--#{$color-name} { background-color: $background-color !important; }
+    // .border-color--#{$color-name} { border-color: $border-color !important; }
+}

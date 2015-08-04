@@ -1,0 +1,108 @@
+/**
+ * objects/_display--extends.scss
+ */
+
+/* ==========================================================================
+   Display
+   ========================================================================== */
+
+/* Display utilities
+   ========================================================================== */
+
+// Hidden
+
+@mixin hidden($extend: true) {
+    @if $extend {
+        @extend %hidden;
+    } @else { display: none !important; }
+}
+
+%hidden { @include hidden($extend: false); }
+
+// Hidden visually
+
+@mixin hidden--visually($extend: true) {
+    @if $extend {
+        @extend %hidden--visually;
+    } @else {
+        position: absolute !important;
+        overflow: hidden !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        border: 0 !important;
+        clip: rect(1px, 1px, 1px, 1px) !important;
+    }
+}
+
+%hidden--visually { @include hidden--visually($extend: false); }
+
+// Inline block
+
+@mixin inline-block($extend: true) {
+    @if $extend {
+        @extend %inline-block;
+    } @else {
+        display: inline-block !important;
+        // scss-lint:disable PropertySpelling
+        *display: inline; // IE<8
+        // scss-lint:enable PropertySpelling
+        zoom: 1; // IE<8
+        max-width: 100%;
+        vertical-align: middle;
+    }
+}
+
+%inline-block { @include inline-block($extend: false); }
+
+// Block
+
+@mixin block($extend: true) {
+    @if $extend {
+        @extend %block;
+    } @else { display: block !important; }
+}
+
+%block { @include block($extend: false); }
+
+/* inline-block helpers
+   ========================================================================== */
+
+/**
+ * Remove whitespace - put on the parent
+ */
+
+// scss-lint:disable PropertySpelling
+@mixin remove-whitespace($extend: true) {
+    @if $extend {
+        @extend %remove-whitespace;
+    } @else {
+        // Remove whitespace between `inline-block` elements
+        letter-spacing: -0.31em; // Webkit: collapse white-space between units
+        *letter-spacing: normal; // reset IE<8
+        *word-spacing: -0.43em;
+
+        // Fix text-rendering: optimizeLegibility in Webkit
+        text-rendering: optimizespeed;
+    }
+}
+// scss-lint:enable PropertySpelling
+
+%remove-whitespace { @include remove-whitespace($extend: false); }
+
+/**
+ * Reset whitespace - put on the children
+ */
+
+@mixin reset-whitespace($extend: true) {
+    @if $extend {
+        @extend %reset-whitespace;
+    } @else {
+        // Reset text defaults
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-rendering: auto;
+    }
+}
+
+%reset-whitespace { @include reset-whitespace($extend: false); }

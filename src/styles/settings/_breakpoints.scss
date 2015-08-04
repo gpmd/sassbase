@@ -1,0 +1,30 @@
+/**
+ * settings/_breakpoints.scss
+ */
+
+/* ==========================================================================
+   Breakpoints
+   ========================================================================== */
+
+/**
+ * Based on a :root font-size of 16px
+ */
+
+// Small screens
+$small-screen-min: 20em !default; // 320px
+$small-screen-max: 37.5em !default; // 600px
+
+// Medium screens
+$medium-screen-min: 37.563em !default; // 601px
+$medium-screen-max: 50em !default; // 800px
+
+// Large screens
+$large-screen-min: 50.063em !default; // 801px
+$large-screen-max: 63.75em !default; // 1020px
+
+// Super large screens
+$super-large-screen-min: 63.813em !default; // 1021px
+$super-large-screen-max: 75em !default; // 1200px
+
+// Nav - mobile to desktop
+$nav-mobile-to-desktop: 54.938em !default; // 879px

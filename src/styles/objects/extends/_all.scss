@@ -1,15 +1,13 @@
 /**
- * settings/_main.scss
+ * objects/extends/_all.scss
  */
 
 /* ==========================================================================
    Imports
    ========================================================================== */
 
-@import 'breakpoints';
-@import 'colors';
-@import 'grid';
-@import 'misc';
-@import 'patterns';
-@import 'typography';
-@import 'widths';
+@import 'display';
+@import 'layout';
+@import 'position';
+@import 'text';
+@import 'visibility';

@@ -1,0 +1,54 @@
+/**
+ * objects/_text.scss
+ */
+
+/* ==========================================================================
+   Text
+   ========================================================================== */
+
+/* Family modifiers
+   ========================================================================== */
+
+.font-family--arial { font-family: $arial !important; }
+.font-family--georgia { font-family: $georgia !important; }
+.font-family--tradegothic { font-family: $tradegothic-bold-condensed !important; }
+.font-family--gillsans { font-family: $gillsans !important; }
+
+/* Size modifiers
+   ========================================================================== */
+
+// Smaller
+.font-size--smaller { @extend %font-size--smaller; }
+
+// Larger
+.font-size--larger { @extend %font-size--larger; }
+
+/* Hide
+   ========================================================================== */
+
+.hide-text { @include hide-text($extend: false); }
+
+/* Text break
+   ========================================================================== */
+
+.text--break { @include text--break($extend: false); }
+
+/* Truncate
+   ========================================================================== */
+
+.text--truncate { @include text--truncate($extend: false); }
+
+/* Alignment
+   ========================================================================== */
+
+/* Right */
+
+.text-align--right { @include text-align--right($extend: false); }
+
+/* Center */
+
+.text-align--center { @include text-align--center($extend: false); }
+
+/* Left */
+
+.text-align--left { @include text-align--left($extend: false); }
