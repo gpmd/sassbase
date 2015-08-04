@@ -17,7 +17,7 @@ module.exports = {
     'autoprefixer'
   ],
   devFourth: [
-    'stylestats:dev'
+    'stylestats'
   ],
 
   // Production tasks
