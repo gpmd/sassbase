@@ -1,5 +1,3 @@
-**Note: Work-in-progress, nothing much to see here...**
-
 # SassBase
 
 > A simple Sass base for web projects
