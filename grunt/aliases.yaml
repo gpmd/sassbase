@@ -8,7 +8,7 @@ dev:
     - 'concurrent:devFirst'
     - 'concurrent:devSecond'
     - 'concurrent:devThird'
-    - 'concurrent:devFourth'
+    - 'report'
 prod:
   description: 'Production build'
   tasks:
@@ -16,3 +16,9 @@ prod:
     - 'concurrent:prodSecond'
     - 'concurrent:prodThird'
     - 'concurrent:prodFourth'
+report:
+  description: 'Styles reporting'
+  tasks:
+    - 'scsslint'
+    - 'csscss'
+    - 'stylestats'

@@ -21,30 +21,3 @@
  */
 
 :root { font-size: 1em; }
-
-/* Page Layout
-   ========================================================================== */
-
-/**
- * Pushes footer to the bottom on short pages &
- * vertically aligns .main to middle
- * Causes issues in IE
-*/
-
-// html.flexbox {
-//     min-height: 100%;
-//     display: flex;
-//     align-items: stretch;
-
-//     body {
-//         flex-grow: 1;
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: space-between;
-//         width: 100%;
-//     }
-
-//     .main {
-//         flex-grow: 1;
-//     }
-// }

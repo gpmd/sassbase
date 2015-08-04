@@ -3,7 +3,7 @@ module.exports = {
   // Development settings
   dev: {
     options: {
-      outputStyle: 'nested',
+      outputStyle: 'expanded',
       sourceMap: true
     },
     files: [{
@@ -18,7 +18,7 @@ module.exports = {
   // Production settings
   prod: {
     options: {
-      outputStyle: 'nested',
+      outputStyle: 'expanded',
       sourceMap: false
     },
     files: [{
