@@ -1,5 +1,5 @@
 module.exports = {
-    dist: [
-        '<%= project.dist %>/'
-    ]
+  dist: [
+    '<%= project.dist %>/'
+  ]
 };
