@@ -1,0 +1,18 @@
+/**
+ * objects/_visibility.scss
+ */
+
+/* ==========================================================================
+   Visibility
+   ========================================================================== */
+
+/* Visibility utilities
+   ========================================================================== */
+
+// Visibility visible
+
+.visibility--visible { visibility: visible !important; }
+
+// Visibility hidden
+
+.visibility--hidden { visibility: hidden !important; }

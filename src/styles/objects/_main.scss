@@ -6,18 +6,11 @@
    Imports
    ========================================================================== */
 
-/* Extends
-   ========================================================================== */
-
-@import 'extends/all';
-
-/* Main
-   ========================================================================== */
-
 /**
  * Enable or disable objects as required
  */
 
+@import 'breakout';
 @import 'color';
 @import 'columns';
 @import 'display';
@@ -28,7 +21,9 @@
 @import 'opacity';
 @import 'outset';
 @import 'padding';
+@import 'position';
 @import 'ratio-embed';
 @import 'text';
 @import 'vertical-align';
+@import 'visibility';
 @import 'width';

@@ -91,12 +91,8 @@
 // Flexbox
 .flexbox {
     .grid__cell {
-        display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-        display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
-        display: -ms-flexbox; // TWEENER - IE 10
-        display: -moz-flex;
-        display: -webkit-flex; // NEW - Chrome
-        display: flex; // NEW, Spec - Opera 12.1, Firefox 20+
+        position: relative;
+        display: block;
         padding: 0;
         margin: 0;
     }
@@ -110,7 +106,6 @@
 // No flexbox fallback
 .no-flexbox {
     .grid__cell {
-        -moz-box-sizing: border-box;
         box-sizing: border-box;
         display: inline-block;
         padding: 0;

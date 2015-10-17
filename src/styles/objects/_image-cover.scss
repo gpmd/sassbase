@@ -19,8 +19,13 @@
     position: relative;
 
     &:after {
-        @extend %position--absolute-center;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 0;
         z-index: 0;
+        margin: auto;
         background-color: transparent;
         background-repeat: no-repeat;
         background-position: center center;
