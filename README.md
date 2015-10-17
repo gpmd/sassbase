@@ -39,7 +39,7 @@ grunt report
 
 ## How to use in your own projects
 
-Just copy the `src/styles` directory into your own project and 'hook' it up to your own Grunt/Gulp/Broccoli/Whatever workflow. Or use the Grunt workflow here as the starting point for your own.
+Just copy the `src/styles` directory into your own project and 'hook' it up to your own Grunt/Gulp/Broccoli/Whatever workflow. Alternatively you could use the Grunt workflow here as a starting point, or checkout another of our projects, a simple grunt workflow starting point, [Gruntbase](https://github.com/gpmd/gruntbase).
 
 ---
 
