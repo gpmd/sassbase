@@ -1,0 +1,43 @@
+/**
+ * objects/_breakout.scss
+ */
+
+/* ==========================================================================
+   Breakout
+   ========================================================================== */
+
+/**
+ * Responsive breakout of parent element
+ * http://codepen.io/jakob-e/pen/zjAHe
+ *
+ * Example:
+ *
+ * <div class="breakout">
+ *     <img>
+ * </div>
+ */
+
+// Wrapper
+.breakout {
+    position: relative;
+    display: table;
+    width: 100vw;
+    left: 50%;
+}
+
+// Content
+.breakout > * {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: -50% ;
+}
+
+// Image
+.breakout > img   {
+    display: block;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 320px;
+}

@@ -25,11 +25,11 @@ $paddings: ('zero' 0),
     $padding-name: nth($padding, 1);
     $padding-value: nth($padding, 2);
 
-    .padding-#{$padding-name}--right { padding-right: $padding-value !important; }
-    .padding-#{$padding-name}--bottom { padding-bottom: $padding-value !important; }
-    .padding-#{$padding-name}--left { padding-left: $padding-value !important; }
-    .padding-#{$padding-name}--top { padding-top: $padding-value !important; }
-    .padding-#{$padding-name}--horizontal { padding: 0 $padding-value !important; }
-    .padding-#{$padding-name}--vertical { padding: $padding-value 0 !important; }
-    .padding-#{$padding-name}--all { padding: $padding-value !important; }
+    .padding-right--#{$padding-name} { padding-right: $padding-value !important; }
+    .padding-bottom--#{$padding-name} { padding-bottom: $padding-value !important; }
+    .padding-left--#{$padding-name} { padding-left: $padding-value !important; }
+    .padding-top--#{$padding-name} { padding-top: $padding-value !important; }
+    .padding-horizontal--#{$padding-name} { padding: 0 $padding-value !important; }
+    .padding-vertical--#{$padding-name} { padding: $padding-value 0 !important; }
+    .padding-all--#{$padding-name} { padding: $padding-value !important; }
 }

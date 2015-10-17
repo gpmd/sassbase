@@ -10,13 +10,52 @@
    ========================================================================== */
 
 // Hidden
-.hidden { @include hidden($extend: false); }
+.display--hidden { display: none !important; }
 
 // Hidden visually
-.hidden--visually { @include hidden--visually($extend: false); }
+.display--hidden--visually {
+    position: absolute !important;
+    overflow: hidden !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+}
 
 // Inline block
-.inline-block { @include inline-block($extend: false); }
+.display--inline-block {
+    display: inline-block !important;
+    *display: inline; // IE<8
+    zoom: 1; // IE<8
+    max-width: 100%;
+    vertical-align: middle;
+}
 
 // Block
-.block { @include block($extend: false); }
+.display--block { display: block !important; }
+
+/**
+ * Remove whitespace - put on the parent
+ */
+
+.remove-whitespace {
+    // Remove whitespace between `inline-block` elements
+    letter-spacing: -0.31em; // Webkit: collapse white-space between units
+    *letter-spacing: normal; // reset IE<8
+    *word-spacing: -0.43em;
+
+    // Fix text-rendering: optimizeLegibility in Webkit
+    text-rendering: optimizespeed;
+}
+
+/**
+ * Reset whitespace - put on the children
+ */
+
+.reset-whitespace {
+    // Reset text defaults
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-rendering: auto;
+}

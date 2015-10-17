@@ -16,7 +16,29 @@
  *         <!-- Content -->
  *     </div>
  * </div>
+ *
+ * @note Parent element must have position relative
  */
+
+/* Extends
+   ========================================================================== */
+
+%inline-block {
+    display: inline-block !important;
+    *display: inline; // IE<8
+    zoom: 1; // IE<8
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/* Wrapper
+   ========================================================================== */
+
+.valign {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 
 /* Pseudo element to center on */
 
@@ -35,6 +57,7 @@
 
 .valign__content--top {
     @extend %inline-block;
+    width: 100%;
     vertical-align: top;
 }
 
@@ -45,6 +68,7 @@
 
 .valign__content--middle {
     @extend %inline-block;
+    width: 100%;
     vertical-align: middle;
 }
 
@@ -55,5 +79,6 @@
 
 .valign__content--bottom {
     @extend %inline-block;
+    width: 100%;
     vertical-align: bottom;
 }
