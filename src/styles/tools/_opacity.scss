@@ -17,6 +17,6 @@
         opacity: $value;
     }
 
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity='+$ie-value+')";
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$ie-value+")";
     filter: alpha(opacity=$ie-value);
 }
