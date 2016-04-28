@@ -11,18 +11,16 @@
 
 $arial: Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
 $georgia: Georgia, Times, 'Times New Roman', serif !default;
-$tradegothic-bold-condensed: 'TradeGothicLT-BoldCondTwenty' !default;
-$gillsans: 'GillSansMTStd', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
 
 /* Base styles
    ========================================================================== */
 
-$sans-serif: $gillsans !default;
+$sans-serif: $arial !default;
 $serif: $georgia !default;
 
-$display-heading: $tradegothic-bold-condensed !default;
-$sub-heading: $gillsans !default;
-$body-heading: $gillsans !default;
+$display-heading: $sans-serif !default;
+$sub-heading: $serif !default;
+$body-heading: $sans-serif !default;
 $intro: $serif !default;
 
 $base-font-family: $sans-serif !default;
