@@ -33,6 +33,8 @@ grunt prod
 
 **Styles reporting (SCSS lint / CSS stats):**
 
+*Note: CSS reporting requires Ruby and the CSSCSS Ruby Gem. [Click here](https://github.com/peterkeating/grunt-csscss) for more info.*
+
 ```bash
 grunt report
 ```
