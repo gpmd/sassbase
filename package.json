@@ -8,7 +8,6 @@
     "grunt-concurrent": "^2.0.3",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-cssmin": "^1.0.1",
-    "grunt-csscss": "^0.6.2",
     "grunt-sass": "^1.1.0-beta",
     "grunt-scss-lint": "^0.3.8",
     "grunt-stylestats": "^0.1.3",

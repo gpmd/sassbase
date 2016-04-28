@@ -20,5 +20,4 @@ report:
   description: 'Styles reporting'
   tasks:
     - 'scsslint'
-    - 'csscss'
     - 'stylestats'
