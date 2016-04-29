@@ -12,13 +12,13 @@
  *
  * Example:
  *
- * <div class="breakout">
+ * <div class="o-breakout">
  *     <img>
  * </div>
  */
 
 // Wrapper
-.breakout {
+.o-breakout {
     position: relative;
     display: table;
     width: 100vw;
@@ -26,7 +26,7 @@
 }
 
 // Content
-.breakout > * {
+.o-breakout > * {
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -34,7 +34,7 @@
 }
 
 // Image
-.breakout > img   {
+.o-breakout > img   {
     display: block;
     display: block;
     width: 100%;

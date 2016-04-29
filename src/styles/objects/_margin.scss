@@ -28,11 +28,11 @@ $margins:
     $margin-name: nth($margin, 1);
     $margin-value: nth($margin, 2);
 
-    .margin-right--#{$margin-name} { margin-right: $margin-value !important; }
-    .margin-bottom--#{$margin-name} { margin-bottom: $margin-value !important; }
-    .margin-left--#{$margin-name} { margin-left: $margin-value !important; }
-    .margin-top--#{$margin-name} { margin-top: $margin-value !important; }
-    .margin-horizontal--#{$margin-name} { margin: 0 $margin-value !important; }
-    .margin-vertical--#{$margin-name} { margin: $margin-value 0 !important; }
-    .margin-all--#{$margin-name} { margin: $margin-value !important; }
+    .o-margin-right--#{$margin-name} { margin-right: $margin-value !important; }
+    .o-margin-btm--#{$margin-name} { margin-bottom: $margin-value !important; }
+    .o-margin-left--#{$margin-name} { margin-left: $margin-value !important; }
+    .o-margin-top--#{$margin-name} { margin-top: $margin-value !important; }
+    .o-margin-horz--#{$margin-name} { margin: 0 $margin-value !important; }
+    .o-margin-vert--#{$margin-name} { margin: $margin-value 0 !important; }
+    .o-margin-all--#{$margin-name} { margin: $margin-value !important; }
 }

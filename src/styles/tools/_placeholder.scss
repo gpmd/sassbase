@@ -11,7 +11,7 @@
 /* Color
    ========================================================================== */
 
-@mixin placeholder-color($color) {
+@mixin m-placeholder-color($color) {
     &::-webkit-input-placeholder { color: $color; }
 
     &:-moz-placeholder {

@@ -15,7 +15,7 @@
 //
 //  transition: top 150ms ease-out,left 150ms ease-out,right 150ms ease-out;
 
-@mixin transition($properties) {
+@mixin m-transition($properties) {
     @if length($properties) > 1 {
         $transition: '';
         @each $property in $properties {

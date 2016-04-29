@@ -15,7 +15,7 @@
  * @Note The actual image urls need to be defined inline
  */
 
-[class*='image-cover'] {
+[class*='o-image-cover'] {
     position: relative;
 
     &:after {
@@ -39,7 +39,7 @@
 
 /* Opacity */
 
-[class*='image-cover'] {
+[class*='o-image-cover'] {
     &[class*='--opacity-0pc']:after { opacity: 0; }
     &[class*='--opacity-25pc']:after { opacity: 0.25; }
     &[class*='--opacity-50pc']:after { opacity: 0.5; }

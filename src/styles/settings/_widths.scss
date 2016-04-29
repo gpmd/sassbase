@@ -30,25 +30,19 @@ $one-whole: 100% !default;
    ========================================================================== */
 
 /**
- * Based on a $base-font-size of 0.813em/13px
+ * Based on a :root font-size of 16px
  */
 
-$gutter: 0.769em !default; // 10px
+$gutter: 1.250em !default; // 20px
 
 /* Containers
    ========================================================================== */
 
-/**
- * Based on a $base-font-size of 0.813em/13px
- */
-
-$container-text-area: 63.827em !default; // 830px
-
-$container-narrow: 36.154em !default; // 470px
-$container-medium: 54.923em !default; // 714px
-$container-standard: 73.846em !default; // 960px
-$container-wide: 92.308em !default; // 1200px
-$container-widest: 105.077em !default; // 1366px
-$container-max: $one-whole !default; // 100%
+$container-xs: $bp-xs-min !default;
+$container-s: $bp-s-min !default;
+$container-m: $bp-m-min !default;
+$container-l: $bp-l-min !default;
+$container-xl: $bp-xl-min !default;
+$container-max: 100% !default;
 
 $container-padding: $gutter !default;

@@ -9,19 +9,19 @@
 /* Default values
    ========================================================================== */
 
-[class*='columns'] { column-gap: ($gutter * 2); }
+[class*='o-cols'] { column-gap: ($gutter * 2); }
 
-.columns--2 { columns: 1; }
-.columns--4 { columns: 1; }
+.o-cols--2 { columns: 1; }
+.o-cols--4 { columns: 1; }
 
 /* Media queries
    ========================================================================== */
 
-@include bp-more-than($bp-xs-min) {
-    .columns--2,
-    .columns--4 { columns: 2; }
+@include m-bp-more-than($bp-xs-min) {
+    .o-cols--2,
+    .o-cols--4 { columns: 2; }
 }
 
-@include bp-more-than($bp-m-min) {
-    .columns--4 { columns: 4; }
+@include m-bp-more-than($bp-m-min) {
+    .o-cols--4 { columns: 4; }
 }
