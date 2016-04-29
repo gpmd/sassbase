@@ -9,7 +9,7 @@
 /* Contain floats
    ========================================================================== */
 
-.cf {
+.o-cf {
     &:before,
     &:after {
         content: ' ';
@@ -22,8 +22,8 @@
 /* Floats
    ========================================================================== */
 
-.float--none { float: none !important; }
+.o-float--none { float: none !important; }
 
-.float--left { float: left !important; }
+.o-float--left { float: left !important; }
 
-.float--right { float: right !important; }
+.o-float--right { float: right !important; }

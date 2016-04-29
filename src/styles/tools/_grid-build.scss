@@ -27,7 +27,7 @@
 // modifier suffix that can be used to adjust grids in different contexts (e.g.
 // viewport dimensions).
 
-@mixin grid-build($units, $modifier: '') {
+@mixin m-grid-build($units, $modifier: '') {
 
     /* Proportional units
        ========================================================================== */
@@ -62,10 +62,10 @@
             $canreduce: contains($units, $n-r);
 
             // Create units based on fractions
-            .unit-#{$i}-#{$n}#{$modifier} {
+            .o-unit-#{$i}-#{$n}#{$modifier} {
                 // If this unit can be reduced then extend the previous rule
                 @if $canreduce {
-                    @extend .unit-#{$i-r}-#{$n-r}#{$modifier};
+                    @extend .o-unit-#{$i-r}-#{$n-r}#{$modifier};
                 } @else {
                     // Otherwise create a new % width
                     width: percentage($i / $n);

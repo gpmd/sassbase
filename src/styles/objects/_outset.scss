@@ -8,9 +8,9 @@
 
 /* Defaults */
 
-.outset--right,
-.outset--left,
-.outset--center {
+.o-outset--right,
+.o-outset--left,
+.o-outset--center {
     position: relative;
     margin-right: 0;
     margin-left: 0;
@@ -18,28 +18,28 @@
 
 /* Margin transition */
 
-.outset--right,
-.outset--left,
-.outset--center { transition: margin $base-transition-duration $base-transition-easing; }
+.o-outset--right,
+.o-outset--left,
+.o-outset--center { transition: margin $base-transition-duration $base-transition-easing; }
 
 /* Add outsets to medium screens and up */
 
-@include bp-more-than($bp-s-min) {
+@include m-bp-more-than($bp-s-min) {
 
     // Right
-    .outset--right {
+    .o-outset--right {
         margin-right: -200px;
         margin-left: 0;
     }
 
     // Center
-    .outset--center {
+    .o-outset--center {
         margin-right: -200px;
         margin-left: -200px;
     }
 
     // Left
-    .outset--left {
+    .o-outset--left {
         margin-right: 0;
         margin-left: -200px;
     }

@@ -28,11 +28,11 @@ $paddings:
     $padding-name: nth($padding, 1);
     $padding-value: nth($padding, 2);
 
-    .padding-right--#{$padding-name} { padding-right: $padding-value !important; }
-    .padding-bottom--#{$padding-name} { padding-bottom: $padding-value !important; }
-    .padding-left--#{$padding-name} { padding-left: $padding-value !important; }
-    .padding-top--#{$padding-name} { padding-top: $padding-value !important; }
-    .padding-horizontal--#{$padding-name} { padding: 0 $padding-value !important; }
-    .padding-vertical--#{$padding-name} { padding: $padding-value 0 !important; }
-    .padding-all--#{$padding-name} { padding: $padding-value !important; }
+    .o-padding-right--#{$padding-name} { padding-right: $padding-value !important; }
+    .o-padding-btm--#{$padding-name} { padding-bottom: $padding-value !important; }
+    .o-padding-left--#{$padding-name} { padding-left: $padding-value !important; }
+    .o-padding-top--#{$padding-name} { padding-top: $padding-value !important; }
+    .o-padding-horz--#{$padding-name} { padding: 0 $padding-value !important; }
+    .o-padding-vert--#{$padding-name} { padding: $padding-value 0 !important; }
+    .o-padding-all--#{$padding-name} { padding: $padding-value !important; }
 }

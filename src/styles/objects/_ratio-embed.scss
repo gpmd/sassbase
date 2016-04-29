@@ -13,9 +13,9 @@
  *
  * Example usage:
  *
- * <div class='ratio-embed'>
- *     <div class='ratio-embed__ratio ratio-embed--3by2'></div>
- *     <div class='ratio-embed__content'>
+ * <div class='o-ratio-embed'>
+ *     <div class='o-ratio-embed__ratio o-ratio-embed--3by2'></div>
+ *     <div class='o-ratio-embed__content'>
  *         <!-- Content -->
  *     </div>
  * </div>
@@ -24,7 +24,7 @@
 /* Defaults
    ========================================================================== */
 
-.ratio-embed {
+.o-ratio-embed {
     display: block;
     width: 100%;
     overflow: hidden;
@@ -36,7 +36,7 @@
  * the component to respect max-height. Default aspect ratio is 1:1.
  */
 
-[class^='ratio-embed__ratio'] {
+[class^='o-ratio-embed__ratio'] {
     display: block;
     padding-bottom: 100%;
     width: 100%;
@@ -44,7 +44,7 @@
 
 /* Fit the content to the aspect ratio */
 
-.ratio-embed__content {
+.o-ratio-embed__content {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -59,7 +59,7 @@
 /* Ratio modifiers
    ========================================================================== */
 
-[class^='ratio-embed__ratio'] {
+[class^='o-ratio-embed__ratio'] {
     &[class*='--2by3'] { padding-bottom: 150%; }
     &[class*='--1by1'] { padding-bottom: 100%; }
     &[class*='--2by1'] { padding-bottom: 50%; }
@@ -72,7 +72,7 @@
 /* Make iframe, object & embed fit container
    ========================================================================== */
 
-.ratio-embed__content {
+.o-ratio-embed__content {
     iframe,
     object,
     embed {

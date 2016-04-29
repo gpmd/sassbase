@@ -31,7 +31,7 @@ $colors:
     $border-color: nth($color, 2);
 
     // Color selectors
-    .color--#{$color-name} { color: $text-color !important; }
-    .background-color--#{$color-name} { background-color: $background-color !important; }
-    .border-color--#{$color-name} { border-color: $border-color !important; }
+    .o-color--#{$color-name} { color: $text-color !important; }
+    .o-bg-color--#{$color-name} { background-color: $background-color !important; }
+    .o-bdr-color--#{$color-name} { border-color: $border-color !important; }
 }
