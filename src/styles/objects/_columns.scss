@@ -17,11 +17,11 @@
 /* Media queries
    ========================================================================== */
 
-@include bp-more-than($small-screen-min) {
+@include bp-more-than($bp-xs-min) {
     .columns--2,
     .columns--4 { columns: 2; }
 }
 
-@include bp-more-than($large-screen-min) {
+@include bp-more-than($bp-m-min) {
     .columns--4 { columns: 4; }
 }

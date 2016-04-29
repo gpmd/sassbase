@@ -9,18 +9,19 @@
 /* Width vars
    ========================================================================== */
 
-$widths: ('one-twelfth' $one-twelfth),
-         ('one-sixth' $one-sixth),
-         ('one-quarter' $one-quarter),
-         ('one-third' $one-third),
-         ('five-twelfths' $five-twelfths),
-         ('one-half' $one-half),
-         ('seven-twelfths' $seven-twelfths),
-         ('two-thirds' $two-thirds),
-         ('three-quarters' $three-quarters),
-         ('five-sixths' $five-sixths),
-         ('eleven-twelfths' $eleven-twelfths),
-         ('one-whole' $one-whole);
+$widths:
+    ('one-twelfth' $one-twelfth),
+    ('one-sixth' $one-sixth),
+    ('one-quarter' $one-quarter),
+    ('one-third' $one-third),
+    ('five-twelfths' $five-twelfths),
+    ('one-half' $one-half),
+    ('seven-twelfths' $seven-twelfths),
+    ('two-thirds' $two-thirds),
+    ('three-quarters' $three-quarters),
+    ('five-sixths' $five-sixths),
+    ('eleven-twelfths' $eleven-twelfths),
+    ('one-whole' $one-whole);
 
 /* Generate width
    ========================================================================== */

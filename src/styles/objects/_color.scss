@@ -9,12 +9,13 @@
 /* Color vars
    ========================================================================== */
 
-$colors: ('black' $black),
-         ('white' $white),
-         ('light-grey' $grey-light),
-         ('medium-grey' $grey-medium),
-         ('dark-grey' $grey-dark),
-         ('darkest-grey' $grey-darkest);
+$colors:
+    ('black' $black),
+    ('white' $white),
+    ('light-grey' $grey-light),
+    ('medium-grey' $grey-medium),
+    ('dark-grey' $grey-dark),
+    ('darkest-grey' $grey-darkest);
 
 /* Generate colors
    ========================================================================== */
