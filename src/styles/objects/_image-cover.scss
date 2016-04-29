@@ -40,9 +40,9 @@
 /* Opacity */
 
 [class*='image-cover'] {
-    &[class*='--opacity-0pc']:after { @include opacity(0); }
-    &[class*='--opacity-25pc']:after { @include opacity(0.25); }
-    &[class*='--opacity-50pc']:after { @include opacity(0.5); }
-    &[class*='--opacity-75pc']:after { @include opacity(0.75); }
-    &[class*='--opacity-100pc']:after { @include opacity(1); }
+    &[class*='--opacity-0pc']:after { opacity: 0; }
+    &[class*='--opacity-25pc']:after { opacity: 0.25; }
+    &[class*='--opacity-50pc']:after { opacity: 0.5; }
+    &[class*='--opacity-75pc']:after { opacity: 0.75; }
+    &[class*='--opacity-100pc']:after { opacity: 1; }
 }

@@ -229,24 +229,24 @@
 /* Grid units (responsive)
    ========================================================================== */
 
-@include grid-build(1 2 3 4 5 6 7 8);
+@include grid-build(1 2 3 4);
 
-@include bp-more-than($small-screen-min) {
-    @include grid-build(1 2 3 4 5 6 7 8, '--small');
+@include bp-more-than($bp-xs-min) {
+    @include grid-build(1 2 3 4, '--#{size-mod-xs}');
 }
 
-@include bp-more-than($medium-screen-min) {
-    @include grid-build(1 2 3 4 5 6 7 8, '--medium');
+@include bp-more-than($bp-s-min) {
+    @include grid-build(1 2 3 4, '--#{size-mod-s}');
 }
 
-@include bp-more-than($large-screen-min) {
-    @include grid-build(1 2 3 4 5 6 7 8, '--large');
+@include bp-more-than($bp-m-min) {
+    @include grid-build(1 2 3 4, '--#{size-mod-m}');
 }
 
-@include bp-more-than($super-large-screen-min) {
-    @include grid-build(1 2 3 4 5 6 7 8, '--super-large');
+@include bp-more-than($bp-l-min) {
+    @include grid-build(1 2 3 4, '--#{size-mod-l}');
 }
 
-@include bp-more-than($super-large-screen-max) {
-    @include grid-build(1 2 3 4 5 6 7 8, '--super-large-max');
+@include bp-more-than($bp-xl-min) {
+    @include grid-build(1 2 3 4, '--#{size-mod-xl}');
 }

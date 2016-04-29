@@ -1,11 +1,15 @@
 /**
- * tools/_strip-units.scss
+ * settings/_sizes.scss
  */
 
 /* ==========================================================================
-   Strip units
+   Sizes
    ========================================================================== */
 
-@function strip-unit($value) {
-    @return $value / ($value * 0 + 1);
-}
+/* Modifier names */
+
+$size-mod-xs: 'xs';
+$size-mod-s: 's';
+$size-mod-m: 'm';
+$size-mod-l: 'l';
+$size-mod-xl: 'xl';

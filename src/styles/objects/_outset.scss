@@ -24,7 +24,7 @@
 
 /* Add outsets to medium screens and up */
 
-@include bp-more-than($medium-screen-min) {
+@include bp-more-than($bp-s-min) {
 
     // Right
     .outset--right {
