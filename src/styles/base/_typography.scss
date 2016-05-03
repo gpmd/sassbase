@@ -14,7 +14,7 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     // -webkit-font-smoothing: antialiased; // Don't do this: http://usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/
-    color: $base-font-color;
+    color: $c-base-font;
 }
 
 /* Headings
@@ -36,7 +36,7 @@ h6 {
     text-transform: uppercase;
     text-rendering: optimizeLegibility;
     line-height: 1.167; // Tighten line-height up for headings
-    color: $base-heading-color;
+    color: $c-base-heading;
 }
 
 h4,
@@ -117,7 +117,7 @@ blockquote {
 /* Horizontial rules */
 
 hr {
-    border-bottom: 1px dashed $grey-medium;
+    border-bottom: 1px dashed $c-grey-medium;
     border-left: none;
     border-right: none;
     border-top: none;
