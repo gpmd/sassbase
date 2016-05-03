@@ -11,7 +11,7 @@
 
 a {
     text-decoration: none;
-    color: $base-link-color;
+    color: $c-base-link;
     border-bottom: 1px solid;
     border-bottom-color: currentColor;
     transition: color $base-transition-duration $base-transition-easing, border-bottom $base-transition-duration $base-transition-easing;

@@ -10,12 +10,16 @@
    ========================================================================== */
 
 $colors:
-    ('black' $black),
-    ('white' $white),
-    ('light-grey' $grey-light),
-    ('medium-grey' $grey-medium),
-    ('dark-grey' $grey-dark),
-    ('darkest-grey' $grey-darkest);
+    ('black' $c-black),
+    ('white' $c-white),
+    ('light-grey' $c-grey-light),
+    ('medium-grey' $c-grey-medium),
+    ('dark-grey' $c-grey-dark),
+    ('darkest-grey' $c-grey-darkest),
+    ('success' $c-success),
+    ('error' $c-error),
+    ('info' $c-info),
+    ('warning' $c-warning);
 
 /* Generate colors
    ========================================================================== */
