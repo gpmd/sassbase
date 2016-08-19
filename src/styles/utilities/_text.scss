@@ -1,0 +1,154 @@
+/**
+ * objects/_text.scss
+ */
+
+/* ==========================================================================
+   Text
+   ========================================================================== */
+
+/* Family modifiers
+   ========================================================================== */
+
+.u-font-family--arial { font-family: $arial !important; }
+.u-font-family--georgia { font-family: $georgia !important; }
+
+/* Hide
+   ========================================================================== */
+
+.u-hide-text {
+    /* Method 1 */
+
+    position: absolute;
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+
+    /* Method 2 */
+
+    // border: 0;
+    // clip: rect(0 0 0 0);
+    // height: 1px;
+    // margin: -1px;
+    // overflow: hidden;
+    // padding: 0;
+    // position: absolute;
+    // width: 1px;
+
+    /* Method 3 */
+
+     //text-indent: 100%;
+     //white-space: nowrap;
+     //overflow: hidden;
+}
+
+/* Size
+   ========================================================================== */
+
+// Smaller
+.u-font-size--smaller { font-size: smaller !important; }
+
+// Larger
+.u-font-size--larger { font-size: larger !important; }
+
+/* Vars */
+
+$font-sizes:
+    ($size-mod-xxl $font-size-xxl),
+    ($size-mod-xl $font-size-xl),
+    ($size-mod-l $font-size-l),
+    ($size-mod-m $font-size-m),
+    ($size-mod-s $font-size-s),
+    ($size-mod-xs $font-size-xs),
+    ($size-mod-xxs $font-size-xxs);
+
+/**
+ * Generate font-size classes
+ */
+
+@each $font-size in $font-sizes {
+    $font-size-name: nth($font-size, 1);
+    $font-size-value: nth($font-size, 2);
+
+    .u-font-size--#{$font-size-name} { font-size: $font-size-value !important; }
+}
+
+/* Line height
+   ========================================================================== */
+
+/* Vars */
+
+$line-heights:
+    ($size-mod-xxl $line-height-xxl),
+    ($size-mod-xl $line-height-xl),
+    ($size-mod-l $line-height-l),
+    ($size-mod-m $line-height-m),
+    ($size-mod-s $line-height-s),
+    ($size-mod-xs $line-height-xs),
+    ($size-mod-xxs $line-height-xxs);
+
+/**
+ * Generate line-height classes
+ */
+
+@each $line-height in $line-heights {
+    $line-height-name: nth($line-height, 1);
+    $line-height-value: nth($line-height, 2);
+
+    .u-line-height--#{$line-height-name} { line-height: $line-height-value !important; }
+}
+
+/* Weight
+   ========================================================================== */
+
+.u-font-weight--normal { font-weight: normal !important; }
+
+.u-font-weight--bold { font-weight: bold !important; }
+
+/* Style
+   ========================================================================== */
+
+.u-font-style--normal { font-style: normal !important; }
+
+.u-font-style--italic { font-style: italic !important; }
+
+/* Decoration
+   ========================================================================== */
+
+.u-text-decoration--line-through { text-decoration: line-through !important; }
+
+/* Transform
+   ========================================================================== */
+
+.u-text-transform--uppercase { text-transform: uppercase !important; }
+
+/* Line height
+   ========================================================================== */
+
+.u-line-height--reset { line-height: 1 !important; }
+
+/* Alignment
+   ========================================================================== */
+
+.u-text-align--right { text-align: right !important; }
+
+.u-text-align--center { text-align: center !important; }
+
+.u-text-align--left { text-align: left !important; }
+
+/* Word break
+   ========================================================================== */
+
+.u-word--break { word-wrap: break-word !important; }
+
+/* Truncate
+   ========================================================================== */
+
+.u-text--truncate {
+    max-width: 100%;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    word-wrap: normal !important;
+}

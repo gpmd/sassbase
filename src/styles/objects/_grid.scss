@@ -1,5 +1,3 @@
-// scss-lint:disable VendorPrefixes, PropertySpelling
-
 /**
  * objects/_grid.scss
  */
@@ -11,11 +9,11 @@
 /*
  * Example usage:
  *
- * <div class='o-grid o-grid--has-gutter'>
- *     <div class='o-grid__cell o-unit-1-1 o-unit-1-2--m o-unit-1-4--l'></div>
- *     <div class='o-grid__cell o-unit-1-1 o-unit-1-2--m o-unit-1-4--l'></div>
- *     <div class='o-grid__cell o-unit-1-1 o-unit-1-2--m o-unit-1-4--l'></div>
- *     <div class='o-grid__cell o-unit-1-1 o-unit-1-2--m o-unit-1-4--l'></div>
+ * <div class="o-grid o-grid--has-gutter">
+ *     <div class="o-grid__cell o-unit-1-1 o-unit-1-2--m o-unit-1-4--l"></div>
+ *     <div class="o-grid__cell o-unit-1-1 o-unit-1-2--m o-unit-1-4--l"></div>
+ *     <div class="o-grid__cell o-unit-1-1 o-unit-1-2--m o-unit-1-4--l"></div>
+ *     <div class="o-grid__cell o-unit-1-1 o-unit-1-2--m o-unit-1-4--l"></div>
  * </div>
  */
 
@@ -48,7 +46,6 @@
     .o-grid {
         display: block;
         padding: 0;
-        // margin: 0 -0.5 * $grid-gutter;
         text-align: $grid-direction;
 
         // Remove whitespace between `inline-block` elements
@@ -149,11 +146,11 @@
  */
 
 .o-grid--has-gutter {
-    margin-left: -$gutter*2;
+    margin-left: -$grid-gutter;
 
     .o-grid__cell {
-        padding-left: $gutter*2;
-        padding-bottom: $gutter*2;
+        padding-left: $grid-gutter;
+        padding-bottom: $grid-gutter;
     }
 }
 
@@ -229,24 +226,24 @@
 /* Grid units (responsive)
    ========================================================================== */
 
-@include m-grid-build(1 2 3 4);
+@include m-grid-build(1 2 3 4 5 6 7 8 9 10 11 12);
 
 @include m-bp-more-than($bp-xs-min) {
-    @include m-grid-build(1 2 3 4, '--#{size-mod-xs}');
+    @include m-grid-build(1 2 3 4 5 6 7 8 9 10 11 12, '--#{size-mod-xs}');
 }
 
 @include m-bp-more-than($bp-s-min) {
-    @include m-grid-build(1 2 3 4, '--#{size-mod-s}');
+    @include m-grid-build(1 2 3 4 5 6 7 8 9 10 11 12, '--#{size-mod-s}');
 }
 
 @include m-bp-more-than($bp-m-min) {
-    @include m-grid-build(1 2 3 4, '--#{size-mod-m}');
+    @include m-grid-build(1 2 3 4 5 6 7 8 9 10 11 12, '--#{size-mod-m}');
 }
 
 @include m-bp-more-than($bp-l-min) {
-    @include m-grid-build(1 2 3 4, '--#{size-mod-l}');
+    @include m-grid-build(1 2 3 4 5 6 7 8 9 10 11 12, '--#{size-mod-l}');
 }
 
 @include m-bp-more-than($bp-xl-min) {
-    @include m-grid-build(1 2 3 4, '--#{size-mod-xl}');
+    @include m-grid-build(1 2 3 4 5 6 7 8 9 10 11 12, '--#{size-mod-xl}');
 }

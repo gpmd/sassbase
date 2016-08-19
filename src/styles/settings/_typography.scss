@@ -28,9 +28,35 @@ $base-font-family: $sans-serif !default;
 /* Sizes
    ========================================================================== */
 
-/**
- * Based on a $base-font-size of 0.813em/13px
- */
+// Generic sizes
+$font-size-xxl: 3em; // 48px
+$font-size-xl: 2.625em; // 42px
+$font-size-l: 2.25em; // 36px
+$font-size-m: 1.875em; // 30px
+$font-size-s: 1.5em; // 24px
+$font-size-xs: 1em; // 16px
+$font-size-xxs: 0.75em; // 12px
 
-$base-font-size: 0.813em !default; // 13px
-$base-line-height: 1.692 !default;  // 22px
+//Generic line heights
+$line-height-xxl: 4;
+$line-height-xl: 3.5;
+$line-height-l: 3;
+$line-height-m: 2.5;
+$line-height-s: 2;
+$line-height-xs: 1.5;
+$line-height-xxs: 1;
+
+// Base sizes
+$base-font-size: $font-size-xs; // 1em/16px
+$base-line-height: $line-height-xs;  // 1.5 * 16px = 22px
+
+// Headings
+$font-size-h1: $font-size-xxl;
+$font-size-h2: $font-size-xl;
+$font-size-h3: $font-size-l;
+$font-size-h4: $font-size-m;
+$font-size-h5: $font-size-s;
+$font-size-h6: $font-size-xs;
+
+// Other
+$font-size-blockquote: $font-size-s;

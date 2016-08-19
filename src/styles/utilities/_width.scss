@@ -34,5 +34,5 @@ $widths:
     $width-name: nth($width, 1);
     $width-value: nth($width, 2);
 
-    .o-width--#{$width-name} { width: $width-value !important; }
+    .u-width--#{$width-name} { width: $width-value !important; }
 }

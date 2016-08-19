@@ -10,10 +10,10 @@
    ========================================================================== */
 
 // Hidden
-.o-display--hidden { display: none !important; }
+.u-display--hidden { display: none !important; }
 
 // Hidden visually
-.o-display--hidden--visually {
+.u-display--hidden--visually {
     position: absolute !important;
     overflow: hidden !important;
     width: 1px !important;
@@ -24,7 +24,7 @@
 }
 
 // Inline block
-.o-display--inline-block {
+.u-display--inline-block {
     display: inline-block !important;
     *display: inline; // IE<8
     zoom: 1; // IE<8
@@ -33,13 +33,13 @@
 }
 
 // Block
-.o-display--block { display: block !important; }
+.u-display--block { display: block !important; }
 
 /**
  * Remove whitespace - put on the parent
  */
 
-.o-remove-whitespace {
+.u-remove-whitespace {
     // Remove whitespace between `inline-block` elements
     letter-spacing: -0.31em; // Webkit: collapse white-space between units
     *letter-spacing: normal; // reset IE<8
@@ -53,7 +53,7 @@
  * Reset whitespace - put on the children
  */
 
-.o-reset-whitespace {
+.u-reset-whitespace {
     // Reset text defaults
     letter-spacing: normal;
     word-spacing: normal;

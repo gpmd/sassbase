@@ -21,28 +21,3 @@ $three-quarters: 75% !default;
 $five-sixths: 83.33333333333334% !default;
 $eleven-twelfths: 91.66666666666666% !default;
 $one-whole: 100% !default;
-
-/* ==========================================================================
-   Scaffolding
-   ========================================================================== */
-
-/* Layout
-   ========================================================================== */
-
-/**
- * Based on a :root font-size of 16px
- */
-
-$gutter: 1.250em !default; // 20px
-
-/* Containers
-   ========================================================================== */
-
-$container-xs: $bp-xs-min !default;
-$container-s: $bp-s-min !default;
-$container-m: $bp-m-min !default;
-$container-l: $bp-l-min !default;
-$container-xl: $bp-xl-min !default;
-$container-max: 100% !default;
-
-$container-padding: $gutter !default;

@@ -8,7 +8,7 @@
 
 // Absolute center
 
-.o-position--absolute-center {
+.u-position--absolute-center {
     position: absolute !important;
     right: 0 !important;
     bottom: 0 !important;
@@ -19,7 +19,7 @@
 
 // Fixed
 
-.o-position--fixed {
+.u-position--fixed {
     position: fixed !important;
     backface-visibility: hidden; // Improves performance
 }

@@ -3,7 +3,7 @@
 # Rename files for scss importing
 
 # sanitize-css
-pre_rename_sanitize="bower_components/sanitize-css/sanitize.scss"
+pre_rename_sanitize="bower_components/sanitize-css/sanitize.css"
 post_rename_sanitize="bower_components/sanitize-css/_sanitize.scss"
 if [ -f "$pre_rename_sanitize" ]
 then
