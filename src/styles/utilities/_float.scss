@@ -1,5 +1,5 @@
 /**
- * objects/_layout.scss
+ * objects/_float.scss
  */
 
 /* ==========================================================================
@@ -9,7 +9,7 @@
 /* Contain floats
    ========================================================================== */
 
-.o-cf {
+.u-cf {
     &:before,
     &:after {
         content: ' ';
@@ -22,8 +22,8 @@
 /* Floats
    ========================================================================== */
 
-.o-float--none { float: none !important; }
+.u-float--none { float: none !important; }
 
-.o-float--left { float: left !important; }
+.u-float--left { float: left !important; }
 
-.o-float--right { float: right !important; }
+.u-float--right { float: right !important; }

@@ -43,7 +43,7 @@ $opacities:
     $opacity-name: nth($opacity, 1);
     $opacity-value: nth($opacity, 2);
 
-    .o-opacity--#{$opacity-name} {
+    .u-opacity--#{$opacity-name} {
         opacity: $opacity-value !important;
     }
 }

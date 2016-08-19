@@ -8,7 +8,6 @@ dev:
     - 'concurrent:devFirst'
     - 'concurrent:devSecond'
     - 'concurrent:devThird'
-    - 'report'
 prod:
   description: 'Production build'
   tasks:

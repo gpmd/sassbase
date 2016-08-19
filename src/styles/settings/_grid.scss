@@ -6,5 +6,5 @@
    Grid
    ========================================================================== */
 
+$grid-gutter: $gutter !default; // 20px
 $grid-direction: left !default; // switch to 'right' for rtl
-$grid-gutter: 0 !default; // can be px, em, or %

@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "devDependencies": {},
   "dependencies": {
-    "sanitize-css": "~1.1.0"
+    "sanitize-css": "^4.1.0"
   }
 }

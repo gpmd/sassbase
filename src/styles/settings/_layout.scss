@@ -1,0 +1,23 @@
+/**
+ * settings/_layout.scss
+ */
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* Spacing
+   ========================================================================== */
+
+$base-spacing-unit: 0.625em !default; // 10px
+$gutter: $base-spacing-unit*2 !default; // 20px
+
+/* Container widths
+   ========================================================================== */
+
+$container-xs: $bp-xs-min !default;
+$container-s: $bp-s-min !default;
+$container-m: $bp-m-min !default;
+$container-l: $bp-l-min !default;
+$container-xl: $bp-xl-min !default;
+$container-max: 100% !default;

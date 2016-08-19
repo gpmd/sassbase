@@ -37,6 +37,7 @@ label {
     *display: inline; // IE<8
     zoom: 1; // IE<8
     max-width: 100%;
+    margin-bottom: $base-spacing-unit;
 }
 
 /* Textareas */
@@ -58,6 +59,7 @@ input[type='date'],
 input[type='time'],
 input[type='datalist'] {
     width: 100%;
+    margin-bottom: $base-spacing-unit*2;
 
     // &:hover {}
 
@@ -74,4 +76,7 @@ input[type='datalist'] {
 // Search
 // input[type='search'] {}
 
-select { font-family: $sans-serif; }
+select {
+    font-family: $sans-serif;
+    margin-bottom: $base-spacing-unit*2;
+}
